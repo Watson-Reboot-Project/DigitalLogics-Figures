@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Digital Logic Play</title>
+  <title>Digital Logic Figures</title>
   <style>
 	td { padding-left: 10px; padding-right: 10px }
 	.center
 	{
 		margin-left:auto;
 		margin-right:auto;
-		width:70%;
+		width:50%;
 	}
 
   </style>
@@ -19,9 +19,9 @@
 </head>
 	<body oncontextmenu="return false;">
 
-		<div id="error"></div>
-		<div id="container1">
-			<div id="tableDiv"></div>
+		<div id="topDiv-16"></div>
+		<div id="container-16">
+
 		</div>
 		
 		<p> Test </p>
@@ -52,9 +52,10 @@
 		<script src="js/TruthTable.js"></script>
 		<script src="js/Setup.js"></script>
 		<script src="js/DigitalLogicFigure.js"></script>
+
 		
 		<script>
-			var figure1 = new DigitalLogicFigure("container1", 16);
+			var figure1 = new DigitalLogicFigure("container-16", '16');
 			//var figure2 = new DigitalLogicFigure("container2",  2, window.innerWidth, window.innerHeight);
 		</script>
 

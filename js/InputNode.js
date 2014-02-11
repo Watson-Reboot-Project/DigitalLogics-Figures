@@ -47,7 +47,7 @@ function InputNode(initX, initY, setText, initValue, setName, id, setup) {
     compShape = new Kinetic.Rect({
         x: gScale * 15,
         y: gScale * 20,
-        width: gScale * 10,
+        width: gScale * 20,
         height: gScale * 10,
         fill: 'black',
         stroke: 'black',
@@ -88,8 +88,8 @@ function InputNode(initX, initY, setText, initValue, setName, id, setup) {
 	transFg = new Kinetic.Rect({
 		x: gScale * 0,
 		y: gScale * 5,
-		width: gScale * 40,
-		height: gScale * 15
+		width: gScale * 50,
+		height: gScale * 50
 	});
 	
 	// create the group object
