@@ -88,8 +88,8 @@ function Setup(container, figureNo) {
 	resizeTop();
 	
 	function resizeTop() {
-		// width = document.getElementById(container).offsetWidth;
-		width = window.innerWidth;
+		width = document.getElementById(container).offsetWidth;
+		//width = window.innerWidth;
 		height = window.innerHeight;
 		
 		var ratio = width / initWidth;
@@ -98,14 +98,14 @@ function Setup(container, figureNo) {
 			stage.setScale(ratio);
 			stage.setSize(initWidth * ratio, initHeight * ratio);
 			truthTable.setTruthTableScale((ratio * 1.2) * 100, 3, 0);
-			truthTable.setTableOffset((stage.getWidth() / 2) - (truthTable.getTableWidth() / 2));
+			truthTable.setTableOffset((width / 2) - (truthTable.getTableWidth() / 2));
 		}
 		else {
 			stage.setScale(initScale);
 			stage.setSize(initWidth * initScale, initHeight * initScale);
 			if (ratio * (1.5) >= 1) truthTable.setTruthTableScale(100, 6, 0);
 			else truthTable.setTruthTableScale((initScale * 1.5) * 100, 6, 0);
-			truthTable.setTableOffset((stage.getWidth() / 2) - (truthTable.getTableWidth() / 2));
+			truthTable.setTableOffset((width / 2) - (truthTable.getTableWidth() / 2));
 		}
 		
 		timeout = false;
