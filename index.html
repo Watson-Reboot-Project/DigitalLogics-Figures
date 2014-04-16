@@ -19,6 +19,9 @@
 </head>
 	<body oncontextmenu="return false;">
 
+		<div id="topDiv-0"></div>
+		<div id="container-0"></div>
+		<br><br><br>
 		<div id="topDiv-nand"></div>
 		<div id="container-nand"></div>
 		<br><br><br>
@@ -49,6 +52,7 @@
 		<script src="js/OrGate4.js"></script>
 		<script src="js/NorGate.js"></script>
 		
+		<script src="js/Serializer.js"></script>
 		<script src="js/NotGate.js"></script>
 		<script src="js/Connector.js"></script>
 		<script src="js/InputNode.js"></script>
@@ -61,6 +65,7 @@
 
 		
 		<script>
+			var figure4 = new DigitalLogicFigure("container-0", '0');
 			var figure3 = new DigitalLogicFigure("container-nand", 'nand');
 			var figure2 = new DigitalLogicFigure("container-nor", 'nor');
 			var figure1 = new DigitalLogicFigure("container-11", '11');
